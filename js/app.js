@@ -13,7 +13,7 @@
     document.getElementById(_______).________ = " C (da sea get it?) arrrr!";
   }
 
-/*Exercise 4.  Instruct the following function to display the message "My name is Lee, Brrruuuce Lee!" in a new paragraph element after the button is clicked.*/
+/*Exercise 4.  Instruct the following function to display the message "My name is Lee, Brrruuuce Lee!" in the paragraph element after the button is clicked.*/
 
   function kungfu(){
     ________.getElementById(________).________ = "My name is Lee, Brrruuuce Lee!";
