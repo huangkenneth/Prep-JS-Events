@@ -37,6 +37,11 @@ function sayQuote(){
 
 /*Exercise 6. Add another event listener to the image below that will display an inspirational quote after it is clicked</p>*/
 
+document.getElementById().addEventListener("click", rap);
+
+function (){
+  document.getElementById() = "another one, another one, another one...and another one";
+}
 
 
 
