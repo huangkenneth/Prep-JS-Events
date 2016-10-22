@@ -40,9 +40,8 @@ function sayQuote(){
 document.getElementById().addEventListener("click", rap);
 
 function (){
-  document.getElementById() = "another one, another one, another one...and another one";
+  document = "another one, another one, another one...and another one";
 }
-
 
 
 /*Exercise 7.  Generate a random quote from clicking on a button*/
