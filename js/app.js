@@ -1,22 +1,22 @@
 /*Exercise 1.  Fill in the correct id to target the paragraph tag*/
   function fontSize(){
-    document.getElementById(______).style.fontSize = "200%";
+    document.getElementById('one').style.fontSize = "200%";
   }
 
  /*Exercise 2. change the font color to red*/
   function colorMeBadd(){
-    document.getElementById(_______).style.color = '______'; 
+    document.getElementById('two').style.color = 'red'; 
   }
 
 /*Exercise 3. fill in the spaces to make this function operate:*/
   function showAnswer(){
-    document.getElementById(_______).________ = " C (da sea get it?) arrrr!";
+    document.getElementById('answer').innerHTML = " C (da sea get it?) arrrr!";
   }
 
 /*Exercise 4.  Instruct the following function to display the message "My name is Lee, Brrruuuce Lee!" in the paragraph element after the button is clicked.*/
 
   function kungfu(){
-    ________.getElementById(________).________ = "My name is Lee, Brrruuuce Lee!";
+    document.getElementById('name').innerHTML = "My name is Lee, Brrruuuce Lee!";
   }
 
 
@@ -28,10 +28,10 @@ window.onload = function (){
 
 var firstQuote = "Our lives are defined by opportunities; even the ones we miss.";
 
-_________.getElementById(________).addEventListener(______, sayQuote);
+document.getElementById('Benjamin').addEventListener('click', sayQuote);
 
 function sayQuote(){
-  document._________(_______).__________ = __________;
+  document.getElementById('lines').innerHTML = firstQuote;
 }
 
 
@@ -39,9 +39,9 @@ function sayQuote(){
 
 document.getElementById().addEventListener("click", rap);
 
-function (){
-  document = "another one, another one, another one...and another one";
-}
+// function (){
+//   document = "another one, another one, another one...and another one";
+// }
 
 
 /*Exercise 7.  Generate a random quote from clicking on a button*/
