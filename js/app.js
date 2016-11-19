@@ -35,7 +35,7 @@ function sayQuote(){
 }
 
 
-/*Exercise 6. Add another event listener to the image below that will display an inspirational quote after it is clicked</p>*/
+/*Exercise 6. Add another event listener to the image below that will display an inspirational quote from our beloved DJ Khaled after it is clicked</p>*/
 
 document.getElementById().addEventListener("click", rap);
 
