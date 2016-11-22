@@ -47,16 +47,27 @@ function rap(){
 /*Exercise 7.  Generate a random quote from clicking on a button*/
 var quotes = ["It's a funny thing about comin' home. Looks the same, smells the same, feels the same. You'll realize what's changed is you.", "Momma? Momma? Some days, I feel different than the day before.", "Some people, were born to sit by a river. Some get struck by lightning. Some have an ear for music. Some are artists. Some swim. Some know buttons. Some know Shakespeare. Some are mothers. And some people, dance.", "For what it's worth, it's never too late to be whoever you want to be."];
 
-for (i=0;i<quotes.length; i++){
-  document.getElementById('displayQuotes').innerHTML=quotes[i];
+document.getElementById('change').addEventListener("click", message);
 
+function message(){
+  
+  document.getElementById('displayQuotes').innerHTML=quotes[(Math.floor(Math.random()*quotes.length))];
 }
 
-
-                                                   
 /*Exercise 8. Create an event listener that will show and hide the message when clicking on the button.*/
 
+document.getElementById('hideandseek').addEventListener("click", secret);
 
+function secret(){
+    var x = document.getElementById('showmoney');
+    if (x.style.display === 'none'){
+    x.style.display = 'block';
+    }else{
+      x.style.display='none';
+
+  }
+
+}
 
 /*Final Boss:
 Make a visual list of the items in the orders array. When clicking on the product, you must show and hide the price for that item.*/
@@ -64,7 +75,54 @@ Make a visual list of the items in the orders array. When clicking on the produc
 
 var orders = [{product: "Finger Toothbrush", price: 9.99}, {product: "Barry Manilow's Greatest Hits Collection Vol 1", price: 500.01}, {product: "Goldfish Aquairum Phone Booth", price: 199.99}, {product: "Woof Washer 360", price: 9.99}, {product: "Sauna Pants", price: 39.95}, {product: "Noiseless Mute Karaoke Microphone", price: 79.99}, {product: "Necktie Umbrella", price: 16.86}];
 
+function boss(myObj){
+  for(i=0; i<myObj.length; i++){
+    console.log(myObj[i]);
+    console.log(myObj[i].product);
+    console.log(myObj[i].price);
 
+    var productBox = document.createElement('div');
+    productBox.className='products';
+    productBox.innerHTML=myObj[i].product;
+    myOrders.appendChild(productBox);
+
+    var money = document.createElement('div');
+    money.className='price';
+    money.innerHTML=myObj[i].price;
+        money.style.display="none";
+
+    productBox.appendChild(money);
+
+  }
+}
+boss(orders);
+
+
+
+
+
+var sumting = document.getElementsByClassName('products');
+
+console.log(sumting);
+
+for (i=0; i<sumting.length; i++) {
+  sumting[i].addEventListener('click', myPrice);
+}
+
+function myPrice(){
+  var work = this.querySelectorAll('.price')[0];
+  // console.log(this);
+    if (work.style.display === 'none'){
+      work.style.display = 'block';
+    }else{
+      work.style.display='none';
+
+
+  
+
+
+}
+}
 };
 
 
